@@ -9,11 +9,11 @@ def fibonacci_memo(n, memo={}):
     memo[n] = fibonacci_memo(n - 1, memo) + fibonacci_memo(n - 2, memo)
     return memo[n]
 
-JsonResultItemCount = 16 #--Esta valor corresponde al total de elementos en nuestro diccionario de datos
+JsonResultItemCount = 0 #--Reemplaza este valor corresponde con el total de elementos en nuestro diccionario de datos
 
-Excel_Code= 'xyz'  #--Reemplaza valor de Code xyz que corresonde segun el excel APIChallengeFile.xlsx
+Excel_MagicNumber= 'xyz'  #--Reemplaza valor de magicnumber xyz que corresponde segun el excel APIChallengeFile.xlsx
 
-Excel_Sequence= 0    #--Reemplaza el valor 0 por el Sequence que corresonde segun el excel APIChallengeFile.xlsx
+Excel_Sequence= 0    #--Reemplaza el valor 0 por el Sequence que correspode segun el excel APIChallengeFile.xlsx
  
 
 
@@ -21,9 +21,9 @@ Excel_Sequence= 0    #--Reemplaza el valor 0 por el Sequence que corresonde segu
 
 Location =  float(
         
-        str(fibonacci_memo(JsonResultItemCount+Excel_Sequence)).replace(Excel_Code,'')
+        str(fibonacci_memo(JsonResultItemCount+Excel_Sequence)).replace(Excel_MagicNumber,'')
         
-        )  -32.8608
+        )  -32.860
  
 
 print(Location)
