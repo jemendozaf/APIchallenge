@@ -23,7 +23,7 @@ Location =  float(
         
         str(fibonacci_memo(JsonResultItemCount+Excel_Sequence)).replace(Excel_MagicNumber,'')
         
-        )  -32.860
+        )  -32.8608
  
 
 print(Location)
